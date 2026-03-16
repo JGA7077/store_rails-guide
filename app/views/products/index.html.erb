@@ -3,7 +3,12 @@
 <div id="products">
   <% @products.each do |product| %>
     <div>
-      <%= product.name %>
+      <strong>
+        <%= product.id %>
+      </strong>
+      <span>
+        <%= product.name %>
+      </span>
     </div>
   <% end %>
 </div>
