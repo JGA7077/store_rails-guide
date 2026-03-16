@@ -18,6 +18,18 @@
  body {
   background-color: #333;
   color: #f2f2f2;
+
+  a {
+    color: #1E90FF;
+
+    &:hover {
+      color: #ADD8E6;
+    }
+
+    &:visited {
+      color: #BA55D3;
+    }
+  }
  }
 
  #products {
@@ -28,8 +40,7 @@
     padding: 5px;
   }
 
-  span {
-    border-left: 1px solid red;
-    padding-left: 5px;
+  .product-link {
+    font-weight: 700;
   }
  }
