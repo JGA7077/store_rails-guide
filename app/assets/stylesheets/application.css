@@ -8,3 +8,28 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ body {
+  background-color: #333;
+  color: #f2f2f2;
+ }
+
+ #products {
+  border: 1px solid #fff;
+
+  &,
+  div {
+    padding: 5px;
+  }
+
+  span {
+    border-left: 1px solid red;
+    padding-left: 5px;
+  }
+ }
