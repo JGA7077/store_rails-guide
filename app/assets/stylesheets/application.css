@@ -36,8 +36,13 @@
   border: 1px solid #fff;
 
   &,
-  div {
+  .products_list {
     padding: 5px;
+  }
+
+  .products_list {
+    display: flex;
+    gap: 5px;
   }
 
   .product-link {
