@@ -1,0 +1,5 @@
+pt:
+  hello: "Olá mundo!"
+  products:
+    index:
+      title: "Produtos"
