@@ -1,8 +1,8 @@
 <% cache @product do %>
   <h1><%= @product.name %> - PDP</h1>
-  <p>
-    Inventory: <Strong><%= @product.inventory_count %></Strong>
-  </p>
+  
+  <%= render 'inventory', product: @product %>
+
   <%= image_tag @product.featured_image if @product.featured_image.attached? %>
   <%= @product.description %>
 <% end %>
