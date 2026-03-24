@@ -1,7 +1,11 @@
 <%= form_with model: product do |form| %>
-  <% if form.object.errors.any? %>
+  <% if product.errors.any? %>
     <p class="error">
-      <%= form.object.errors.full_message.first %>
+      <% product.errors.each do |error| %>
+        <p>
+          <%= error.full_message %>
+        </p>
+      <% end %>
     </p>
   <% end %>
   <div>
@@ -17,6 +21,11 @@
   <div>
     <%= form.label :featured_image, style: 'display: block' %>
     <%= form.file_field :featured_image, accept: 'image/*' %>
+  </div>
+
+  <div>
+    <%= form.label :inventory_count, style: 'display: block' %>
+    <%= form.number_field :inventory_count %>
   </div>
 
   <div>
